@@ -1,3 +1,7 @@
+import PosterSkillAnalyzer from '../assets/Skill-analyzer.png'
+import PosterJournal from '../assets/journal-app.png'
+import PosterReadIT from '../assets/readit.png'
+import PosterTravel from '../assets/travel-recommender.png'
 export const profile = {
   name: "Janmejay Singh",
   title: "Full-Stack Developer • MERN | AI/ML Explorer",
@@ -38,25 +42,29 @@ export const projects = [
     title: "⚡ SkillSync",
     repo: "Skill_Analyzer",
     desc: "MERN + AI career guidance platform",
-    badges: ["React","Node.js","MongoDB","AI"]
+    badges: ["React","Node.js","MongoDB","AI"],
+    image: PosterSkillAnalyzer,
   },
   {
     title: "📝 Journal App",
     repo: "journal-app",
     desc: "Full-stack journaling web app with secure login",
-    badges: ["React","Node.js","MongoDB"]
+    badges: ["React","Node.js","MongoDB"],
+    image: PosterJournal,
   },
   {
     title: "🔊 ReadIT",
     repo: "ReadIT",
     desc: "Text-to-Speech with voice commands, file import/export, local storage",
-    badges: ["React","Web Speech API","JavaScript"]
+    badges: ["React","Web Speech API","JavaScript"],
+    image: PosterReadIT,
   },
   {
     title: "🧭 Travel Recommender System",
     repo: "Travel-Recommender-system",
     desc: "ML suggestions by budget, duration, region & trip type",
-    badges: ["Python","scikit-learn","Gradio"]
+    badges: ["Python","scikit-learn","Gradio"],
+    image: PosterTravel,
   }
 ];
 
