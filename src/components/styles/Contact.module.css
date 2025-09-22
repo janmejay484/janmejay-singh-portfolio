@@ -1,0 +1,12 @@
+.grid{ display:grid; gap:18px }
+@media(min-width: 900px){
+  .grid{ grid-template-columns: 1fr 1fr }
+}
+.card{ padding:18px }
+.field{ display:flex; flex-direction:column; gap:6px; margin:10px 0 }
+input, textarea{
+  background:#0e1628; border:1px solid #23314d; color:#e6e6f0; border-radius:10px;
+  padding:10px 12px; outline:none; transition:.15s border ease, .15s box-shadow ease;
+}
+input:focus, textarea:focus{ border-color: #5eead4; box-shadow: 0 0 0 6px var(--ring) }
+.hint{ color: var(--muted); font-size:12px; margin-top:8px }

@@ -1,0 +1,4 @@
+.row{
+  display:flex; gap:16px; justify-content:center; flex-wrap:wrap;
+}
+.row img{ border-radius:14px; border:1px solid #ffffff1a }

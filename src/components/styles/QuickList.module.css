@@ -1,0 +1,12 @@
+.details{ padding:14px 16px }
+.tableWrap{ overflow:auto; margin-top:12px }
+.table{
+  width:100%; border-collapse: collapse; min-width:700px;
+}
+th, td{
+  border-bottom:1px solid #ffffff1a;
+  text-align:left; padding:10px 8px;
+}
+thead th{ color:#cfd7e6; font-weight:600 }
+tbody tr:hover{ background:#ffffff05 }
+code{ background:#ffffff10; padding:2px 6px; border-radius:6px }

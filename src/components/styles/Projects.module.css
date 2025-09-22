@@ -1,0 +1,10 @@
+.grid{
+  display:grid; gap:18px;
+}
+@media(min-width: 900px){
+  .grid{ grid-template-columns: 1fr 1fr }
+}
+.item img{ border-radius:14px; border:1px solid #ffffff1a }
+.meta{ padding:12px 14px }
+.desc{ color: var(--muted); margin:4px 0 8px }
+.tags{ display:flex; flex-wrap:wrap; gap:8px }

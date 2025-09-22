@@ -1,0 +1,5 @@
+.footer{ padding: 10px 0 30px }
+.inner{
+  display:flex; gap:8px; justify-content:center; color:#a7b0c0;
+}
+.dot{ opacity:.5 }
