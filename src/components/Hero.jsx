@@ -1,22 +1,41 @@
 import styles from './styles/Hero.module.css'
 import { profile } from '../data/data'
 import myPhoto from '../assets/janmejay.jpeg'
+
 export default function Hero(){
-  const photoSrc = profile.photo || myPhoto|| profile.avatar; // set profile.photo in data.js to your image URL
+  const photoSrc = profile.photo || myPhoto || profile.avatar
+  const [first, ...rest] = (profile.name || 'Janmejay Singh').split(' ')
+  const last = rest.join(' ')
 
   return (
     <section className={styles.hero}>
       <div className="container">
 
-        {/* Keep your waving banner */}
-        <div className={styles.bannerWrap}>
-          <img className={styles.banner} src={profile.heroBanner} alt="Banner"/>
+        {/* NEW: Minimal name lockup (no banner) */}
+        <div className={styles.nameLockup}>
+          <span className={styles.hello}>hey there 👋</span>
+
+          <h1 className={styles.nameLine} aria-label={`I'm ${profile.name}`}>
+            <span className={styles.first}>{first}</span>
+            {last && <span className={styles.last}> {last}</span>}
+            <span className={styles.shine} aria-hidden="true" />
+          </h1>
+
+          <div className={styles.underline} aria-hidden="true">
+            <span className={styles.underlineFill} />
+          </div>
+
+          <div className={styles.metaChips}>
+            <span className={styles.meta}>Full-Stack Developer</span>
+            <span className={styles.dot}>•</span>
+            <span className={styles.meta}>MERN & AI/ML</span>
+          </div>
         </div>
 
-        {/* New split layout: text left, photo right */}
+        {/* Split layout: text + photo (kept) */}
         <div className={styles.wrap}>
           <div className={styles.left}>
-            <h1 className={styles.title}>{profile.title}</h1>
+            <h2 className={styles.title}>{profile.title}</h2>
             <p className={styles.sub}>{profile.tagline}</p>
 
             <div className={styles.typingWrap}>
