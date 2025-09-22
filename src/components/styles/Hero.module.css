@@ -10,3 +10,110 @@
 .sub{ color:var(--muted); margin-top:6px; }
 .typingWrap{ max-width:820px; margin: 16px auto 0; opacity:.95 }
 .actions{ display:flex; gap:12px; justify-content:center; margin-top:16px; flex-wrap:wrap }
+
+.hero{ padding-top:32px }
+.bannerWrap{ display:flex; justify-content:center; }
+.banner{ border-radius:14px; border:1px solid #ffffff1a; box-shadow: var(--shadow) }
+
+/* split layout */
+.wrap{
+  display:grid;
+  gap:24px;
+  align-items:center;
+  margin-top:18px;
+}
+@media (min-width: 900px){
+  .wrap{ grid-template-columns: 1.2fr .8fr }
+}
+
+.left{ text-align:center }
+@media (min-width: 900px){
+  .left{ text-align:left }
+}
+
+.title{
+  margin-top:16px;
+  font-size: clamp(28px, 4vw, 40px);
+  background: linear-gradient(90deg, var(--brand1), var(--brand2));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.sub{ color:var(--muted); margin-top:6px; }
+.typingWrap{ max-width:820px; margin: 16px auto 0; opacity:.95 }
+@media (min-width: 900px){
+  .typingWrap{ margin-left:0 }
+}
+.actions{
+  display:flex; gap:12px; flex-wrap:wrap;
+  justify-content:center; margin-top:16px;
+}
+@media (min-width: 900px){
+  .actions{ justify-content:flex-start }
+}
+
+/* photo card */
+.right{ display:flex; justify-content:center }
+.photoCard{
+  position:relative;
+  width:min(380px, 92%);
+  aspect-ratio: 4/5;
+  border-radius:24px;
+  overflow:hidden;
+  border:1px solid #ffffff22;
+  background:
+    radial-gradient(140% 100% at 100% 0%, #ffffff08, transparent 60%),
+    linear-gradient(180deg, #0d1426, #0b1220);
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+  transform: perspective(800px) rotateY(-6deg) translateZ(0);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.photoCard:hover{
+  transform: perspective(800px) rotateY(-2deg) translateY(-2px);
+  border-color:#ffffff33;
+  box-shadow: 0 18px 40px rgba(0,0,0,.55);
+}
+
+/* soft neon rim light */
+.ring{
+  position:absolute; inset:-2px; border-radius:26px; pointer-events:none;
+  background:
+    conic-gradient(from 180deg at 50% 50%, rgba(255,75,43,.25), rgba(255,65,108,.25), transparent 40% 80%, rgba(255,65,108,.25));
+  mask: radial-gradient(closest-side, transparent 93%, black 94%);
+  filter: blur(6px);
+}
+
+/* glow behind subject */
+.glow{
+  position:absolute; inset:auto;
+  width:220px; height:220px; bottom:8%; left:50%; transform:translateX(-50%);
+  background: radial-gradient(closest-side, rgba(139,233,253,.28), transparent 70%);
+  filter: blur(18px);
+}
+
+/* portrait */
+.photo{
+  position:absolute; inset:0;
+  width:100%; height:100%; object-fit: cover;
+  /* optional crop focus if your image is wide: */
+  object-position: center 20%;
+  border-radius:24px;
+}
+
+/* floating skill chips */
+.badgeFloat{
+  position:absolute; bottom:12px; left:12px; right:12px;
+  display:flex; gap:8px; flex-wrap:wrap; justify-content:center;
+}
+.badgeChip{
+  backdrop-filter: blur(8px);
+  background: #0b1220cc;
+  border:1px solid #ffffff22;
+  padding:6px 10px; border-radius:999px; font-size:12px; color:#e6e6f0;
+}
+
+/* keep existing classes used by left area for compatibility */
+.hero :global(.sec-title){
+  font-size: clamp(28px, 4vw, 40px);
+  background: linear-gradient(90deg, var(--brand1), var(--brand2));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+ /* no-op; reserved */

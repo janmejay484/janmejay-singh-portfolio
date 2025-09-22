@@ -66,3 +66,4 @@ export const quickList = [
   ["ReadIT","TTS w/ voice commands, import/export, local storage","React, Web Speech API, JS","https://github.com/janmejay484/ReadIT"],
   ["Travel Recommender System","ML suggestions by budget, region & type","Python, scikit-learn, Gradio","https://github.com/janmejay484/Travel-Recommender-system"],
 ];
+
