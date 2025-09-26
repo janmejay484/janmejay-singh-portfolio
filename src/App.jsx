@@ -28,7 +28,7 @@ export default function App(){
         <ActivityGraph />
         <Skills />
         <Projects />
-        <QuickList />
+        {/* <QuickList /> */}
         <Contact />
       </main>
       <Footer />
