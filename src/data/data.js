@@ -2,6 +2,7 @@ import PosterSkillAnalyzer from '../assets/Skill-analyzer.png'
 import PosterJournal from '../assets/journal-app.png'
 import PosterReadIT from '../assets/readit.png'
 import PosterTravel from '../assets/travel-recommender.png'
+import PosterPortfolio from '../assets/portfolio.png'
 import MyPhoto from '../assets/janmejay.jpeg'
 import MyLogo from '../assets/logo.jpg'
 export const profile = {
@@ -72,7 +73,14 @@ export const projects = [
     desc: "ML suggestions by budget, duration, region & trip type",
     badges: ["Python","scikit-learn","Gradio"],
     image: PosterTravel,
-  }
+  },
+  {
+  title: "🌐 Personal Portfolio Website",
+  repo: "janmejay-singh-portfolio",
+  desc: "A modern, responsive developer portfolio showcasing projects, skills, and experience with interactive animations.",
+  badges: ["React", "Next.js", "TailwindCSS", "Framer Motion"],
+  image: PosterPortfolio,
+},
 ];
 
 export const quickList = [
@@ -80,5 +88,45 @@ export const quickList = [
   ["Journal App","Full-stack journaling with secure login","React, Node.js, MongoDB","https://github.com/janmejay484/journal-app"],
   ["ReadIT","TTS w/ voice commands, import/export, local storage","React, Web Speech API, JS","https://github.com/janmejay484/ReadIT"],
   ["Travel Recommender System","ML suggestions by budget, region & type","Python, scikit-learn, Gradio","https://github.com/janmejay484/Travel-Recommender-system"],
+];
+
+// ABOUT
+export const about = {
+  blurb:
+    "I’m a Computer Science Engineering student and developer passionate about creating modern, scalable, and user-friendly applications. I specialize in React and MERN stack development while exploring AI/ML to bring intelligence into web experiences.",
+  highlights: [
+    "Frontend expertise with React, Vite, and Tailwind CSS",
+    "MERN stack development with clean, scalable architecture",
+    "Next.js with App Router, API routes & SSR/ISR",
+    "AI/ML integrations for real-world use cases",
+  ],
+};
+
+// EXPERIENCE (newest first)
+export const experience = [
+  {
+    company: "Infosys Springboard",
+    role: "AI Intern",
+    period: "Sep 2025 — Present",
+    location: "Remote",
+    bullets: [
+      "Working on AI/ML-driven solutions for real-world applications.",
+      "Experimenting with large language models and embeddings for intelligent tools.",
+      "Collaborating on projects integrating AI into web platforms.",
+    ],
+    tech: ["Python", "Machine Learning", "AI/ML", "LLMs", "APIs"],
+  },
+  {
+    company: "MaddyCustom.com",
+    role: "Frontend Developer",
+    period: "Jan 2025 — Jul 2025",
+    location: "Remote",
+    bullets: [
+      "Developed responsive and user-friendly e-commerce website features.",
+      "Optimized performance and SEO for better user engagement and reach.",
+      "Collaborated with the team to deliver scalable frontend solutions.",
+    ],
+    tech: ["React", "JavaScript", "CSS Modules", "Tailwind", "Vite"],
+  },
 ];
 

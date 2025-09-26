@@ -10,6 +10,8 @@ import QuickList from './components/QuickList'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Starfield from './components/Starfield'
+import Experience from './components/Experience'
+import About from './components/About'
 
 export default function App(){
   return (
@@ -19,7 +21,9 @@ export default function App(){
       <main>
         <Hero />
         <Badges />
+        {/* <About/> */}
         <TechStack />
+        <Experience/>
         <Stats />
         <ActivityGraph />
         <Skills />

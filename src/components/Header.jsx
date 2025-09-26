@@ -45,7 +45,10 @@ export default function Header(){
           <nav className={styles.nav} aria-label="Primary">
             <a href="#skills" className={styles.link}>Skills</a>
             <a href="#projects" className={styles.link}>Projects</a>
+            {/* <a href="#about" className={styles.link}>About</a> */}
+            <a href="#experience" className={styles.link}>Experience</a>
             <a href="#contact" className={`${styles.link} ${styles.cta}`}>Contact</a>
+
           </nav>
 
           {/* Mobile hamburger */}
@@ -72,7 +75,10 @@ export default function Header(){
         <nav className={styles.mobilePanel} onClick={(e)=>e.stopPropagation()}>
           <a href="#skills" onClick={()=>setOpen(false)}>Skills</a>
           <a href="#projects" onClick={()=>setOpen(false)}>Projects</a>
+          {/* <a href="#about" className={styles.link}>About</a> */}
+          <a href="#experience" className={styles.link}>Experience</a>
           <a href="#contact" className={styles.mobileCta} onClick={()=>setOpen(false)}>Contact</a>
+
         </nav>
       </div>
     </header>

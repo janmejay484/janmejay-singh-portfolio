@@ -1,0 +1,147 @@
+.section {
+  padding: clamp(40px, 6vw, 80px) 5vw;
+}
+.header {
+  text-align: center;
+  margin-bottom: clamp(16px, 3vw, 24px);
+}
+.title {
+  margin: 0;
+  font-size: clamp(28px, 3.6vw, 40px);
+  background: linear-gradient(90deg, var(--brand1), var(--brand2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.sub {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* timeline */
+.timeline {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #ffffff22, #ffffff08);
+}
+
+.item {
+  position: relative;
+  margin: 0 0 16px 0;
+  animation: itemIn 0.45s ease var(--d, 0ms) both;
+}
+@keyframes itemIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dot {
+  position: absolute;
+  left: -2px;
+  top: 18px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #22d3ee, #8be9fd);
+  box-shadow: 0 0 0 4px #22d3ee22, 0 0 18px #22d3ee88;
+}
+
+.card {
+  margin-left: 16px;
+  border-radius: 16px;
+  border: 1px solid #ffffff22;
+  overflow: hidden;
+  background: radial-gradient(120% 100% at 100% 0%, #ffffff08, transparent 60%),
+    linear-gradient(180deg, #0e1530, #0b1220);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+  padding: 14px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.role {
+  margin: 0;
+  font-size: clamp(16px, 2.4vw, 20px);
+  color: #e9eefb;
+}
+.period {
+  color: #a7b0c0;
+  font-weight: 600;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #cfd7e6;
+  margin-top: 2px;
+}
+.sep {
+  opacity: 0.5;
+}
+.company {
+  font-weight: 700;
+}
+
+.bullets {
+  margin: 8px 0 8px 18px;
+  padding: 0;
+  color: #cfd7e6;
+  line-height: 1.6;
+}
+.bullets li {
+  margin-bottom: 6px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+.tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #dbe8ff;
+  border: 1px solid #ffffff22;
+  background: #0b1220cc;
+  backdrop-filter: blur(6px);
+}
+
+/* compact on small screens */
+@media (max-width: 560px) {
+  .timeline {
+    padding-left: 10px;
+  }
+  .timeline::before {
+    left: 4px;
+  }
+  .dot {
+    left: -5px;
+  }
+  .card {
+    margin-left: 12px;
+  }
+}
