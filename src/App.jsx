@@ -9,10 +9,12 @@ import Projects from './components/Projects'
 import QuickList from './components/QuickList'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Starfield from './components/Starfield'
 
 export default function App(){
   return (
     <>
+    <Starfield/>
       <Header />
       <main>
         <Hero />

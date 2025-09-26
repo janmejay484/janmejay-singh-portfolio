@@ -1,0 +1,32 @@
+.starfield {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2; /* sits behind everything */
+  display: block;
+  background: #0b1220; /* fallback color */
+}
+
+/* mouse light spotlight */
+.cursorLight {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    200px 200px at var(--mx, 50vw) var(--my, 50vh),
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.04) 45%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  mix-blend-mode: screen; /* brightens stars under cursor */
+  transition: background-position 0.05s linear;
+}
+
+/* Prefers-reduced-motion: stop subtle effects for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .cursorLight {
+    display: none;
+  }
+}
