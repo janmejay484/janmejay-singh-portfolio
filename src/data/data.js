@@ -3,6 +3,7 @@ import PosterJournal from '../assets/journal-app.png'
 import PosterReadIT from '../assets/readit.png'
 import PosterTravel from '../assets/travel-recommender.png'
 import MyPhoto from '../assets/janmejay.jpeg'
+import MyLogo from '../assets/logo.jpg'
 export const profile = {
   name: "Janmejay Singh",
   title: "Full-Stack Developer • MERN | AI/ML Explorer",
@@ -13,6 +14,10 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/janmejay-singh484/",
   avatar: "https://avatars.githubusercontent.com/u/0?v=4",
   photo: MyPhoto,
+  logo: MyLogo,
+  leetcode: 'https://leetcode.com/u/janmejay484/',
+  gfg: 'https://www.geeksforgeeks.org/user/janmejay484/',
+  hackerrank: 'https://www.hackerrank.com/profile/janmejaysi484',
   heroBanner: "https://capsule-render.vercel.app/api?type=waving&color=0:FF4B2B,100:FF416C&height=180&section=header&text=Hi%2C%20I'm%20Janmejay%20Singh&fontSize=40&fontColor=ffffff&animation=twinkling&fontAlignY=35",
   typing1: "https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=26&duration=3200&pause=600&color=FFFFFF&center=true&vCenter=true&width=760&lines=Full-Stack+Developer+%F0%9F%92%BB;MERN+%7C+AI+%7C+ML+Explorer+%F0%9F%9A%80;Always+Learning+and+Building+%E2%9A%A1",
 };

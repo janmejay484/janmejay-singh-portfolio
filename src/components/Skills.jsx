@@ -60,7 +60,7 @@ export default function Skills(){
 
 /** ---------- Neon Radar (SVG with animations) ---------- */
 function NeonRadar({ labels, values }) {
-  const size = 360, cx = size/2, cy = size/2, maxR = 140
+  const size = 400, cx = size/2, cy = size/2, maxR = 140
   const angleStep = (Math.PI*2)/labels.length
 
   const pt = (i, v=100) => {
@@ -98,7 +98,7 @@ function NeonRadar({ labels, values }) {
       </g>
 
       {/* grid rings */}
-      {[maxR, maxR*0.8, maxR*0.6, maxR*0.4, maxR*0.2].map((r,idx)=>(
+      {[maxR, maxR*0.8, maxR*0.9, maxR*0.4, maxR*0.2].map((r,idx)=>(
         <circle key={r} cx={cx} cy={cy} r={r} className={styles.ring} stroke="url(#gridStroke)" fill="none" strokeWidth="1" style={{'--delay': `${idx*80}ms`}}/>
       ))}
 

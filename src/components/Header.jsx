@@ -4,7 +4,7 @@ import { profile } from "../data/data";
 
 export default function Header(){
   const [open, setOpen] = useState(false);
-  const avatarSrc = profile.photo || profile.avatar;
+  const avatarSrc = profile.logo || profile.avatar;
 
   // close on route hash change / ESC
   useEffect(()=>{
