@@ -24,10 +24,10 @@ export default function App(){
         {/* <About/> */}
         <TechStack />
         <Experience/>
+        <Projects />
         <Stats />
         <ActivityGraph />
         <Skills />
-        <Projects />
         {/* <QuickList /> */}
         <Contact />
       </main>
