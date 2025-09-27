@@ -20,10 +20,10 @@ export default function Hero(){
         <div className={styles.underline} aria-hidden="true"> 
        <span className={styles.underlineFill} /> 
        </div> 
-       <div className={styles.metaChips}> 
+       {/* <div className={styles.metaChips}> 
        <span className={styles.meta}>Full-Stack Developer</span> 
        <span className={styles.dot}>•</span> 
-       <span className={styles.meta}>MERN & AI/ML</span> </div>
+       <span className={styles.meta}>MERN & AI/ML</span> </div> */}
         </div>
 
         <div className={styles.wrap}>
