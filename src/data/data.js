@@ -53,6 +53,7 @@ export const projects = [
     desc: "MERN + AI career guidance platform",
     badges: ["React","Node.js","MongoDB","AI"],
     image: PosterSkillAnalyzer,
+    live:"https://skill-analyzer-frontend.onrender.com/",
   },
   {
     title: "📝 Journal App",
@@ -60,6 +61,7 @@ export const projects = [
     desc: "Full-stack journaling web app with secure login",
     badges: ["React","Node.js","MongoDB"],
     image: PosterJournal,
+    live:"https://journal-app-pldc.onrender.com/",
   },
   {
     title: "🔊 ReadIT",
@@ -67,6 +69,7 @@ export const projects = [
     desc: "Text-to-Speech with voice commands, file import/export, local storage",
     badges: ["React","Web Speech API","JavaScript"],
     image: PosterReadIT,
+    live:"https://readit-fd5d.onrender.com/",
   },
   {
     title: "🧭 Travel Recommender System",
@@ -74,6 +77,7 @@ export const projects = [
     desc: "ML suggestions by budget, duration, region & trip type",
     badges: ["Python","scikit-learn","Gradio"],
     image: PosterTravel,
+    live:"https://huggingface.co/spaces/janmejay484/tarvel-destination-recommeder",
   },
   {
   title: "🌐 Personal Portfolio Website",
@@ -81,6 +85,7 @@ export const projects = [
   desc: "A modern, responsive developer portfolio showcasing projects, skills, and experience with interactive animations.",
   badges: ["React", "Next.js", "TailwindCSS", "Framer Motion"],
   image: PosterPortfolio,
+  live:"https://janmejay-singh-portfolio.vercel.app/",
 },
 ];
 
