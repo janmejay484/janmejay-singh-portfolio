@@ -11,7 +11,20 @@ export default function Hero(){
   return (
     <section className={styles.hero}>
       <div className="container">
-        {/* name lockup … (unchanged) */}
+       {/* NEW: Minimal name lockup (no banner) */} 
+       <div className={styles.nameLockup}> <span className={styles.hello}>hey there 👋</span> 
+       <h1 className={styles.nameLine} aria-label={`I'm ${profile.name}`}> 
+       <span className={styles.first}>{first}</span> {last && <span className={styles.last}> {last}</span>}
+        <span className={styles.shine} aria-hidden="true" />
+         </h1>
+        <div className={styles.underline} aria-hidden="true"> 
+       <span className={styles.underlineFill} /> 
+       </div> 
+       <div className={styles.metaChips}> 
+       <span className={styles.meta}>Full-Stack Developer</span> 
+       <span className={styles.dot}>•</span> 
+       <span className={styles.meta}>MERN & AI/ML</span> </div>
+        </div>
 
         <div className={styles.wrap}>
           <div className={styles.left}>
