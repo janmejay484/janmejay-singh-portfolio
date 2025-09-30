@@ -91,7 +91,7 @@ export const projects = [
 {
   title: "🎵 V-Audio — Video & YouTube to MP3",
   repo: "V-Audio",
-  desc: "A full-stack app to extract high-quality MP3 audio from local video uploads or YouTube links with a clean, responsive UI.",
+  desc: "A full-stack app to extract high-quality MP3 audio from local video uploads or YouTube links with a clean, responsive UI.(⚠️ YouTube extraction may require refreshed cookies due to rate-limiting — contact me for demo.)",
   badges: ["React", "Material UI", "Express", "ffmpeg", "yt-dlp"],
   image: PosterVAudio,
   live: "https://v-audio.vercel.app/",
