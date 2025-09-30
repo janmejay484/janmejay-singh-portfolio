@@ -3,6 +3,7 @@ import PosterJournal from '../assets/journal-app.png'
 import PosterReadIT from '../assets/readit.png'
 import PosterTravel from '../assets/travel-recommender.png'
 import PosterPortfolio from '../assets/portfolio.png'
+import PosterVAudio from '../assets/PosterVAudio.png'
 import MyPhoto from '../assets/janmejay.jpeg'
 import MyLogo from '../assets/logo.jpg'
 export const profile = {
@@ -87,6 +88,15 @@ export const projects = [
   image: PosterPortfolio,
   live:"https://janmejay-singh-portfolio.vercel.app/",
 },
+{
+  title: "🎵 V-Audio — Video & YouTube to MP3",
+  repo: "V-Audio",
+  desc: "A full-stack app to extract high-quality MP3 audio from local video uploads or YouTube links with a clean, responsive UI.",
+  badges: ["React", "Material UI", "Express", "ffmpeg", "yt-dlp"],
+  image: PosterVAudio,
+  live: "https://v-audio.vercel.app/",
+},
+
 ];
 
 export const quickList = [
@@ -132,7 +142,7 @@ export const experience = [
       "Optimized performance and SEO for better user engagement and reach.",
       "Collaborated with the team to deliver scalable frontend solutions.",
     ],
-    tech: ["React", "JavaScript", "CSS Modules", "Tailwind", "Vite"],
+    tech: ["React", "Next.js", "JavaScript", "CSS Modules", "Material UI", "Github", "Figma","AWS"],
   },
 ];
 
