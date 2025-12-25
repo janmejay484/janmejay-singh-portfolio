@@ -136,7 +136,7 @@ export const experience = [
 ,
   {
     company: "MaddyCustom.com",
-    role: "Frontend Developer",
+    role: "Full-Stack Developer",
     period: "Jan 2025 — Jul 2025",
     location: "Remote",
     bullets: [
