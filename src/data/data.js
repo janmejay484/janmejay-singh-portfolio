@@ -120,18 +120,20 @@ export const about = {
 
 // EXPERIENCE (newest first)
 export const experience = [
-  {
-    company: "Infosys Springboard",
-    role: "AI Intern",
-    period: "Sep 2025 — Present",
-    location: "Remote",
-    bullets: [
-      "Working on AI/ML-driven solutions for real-world applications.",
-      "Experimenting with large language models and embeddings for intelligent tools.",
-      "Collaborating on projects integrating AI into web platforms.",
-    ],
-    tech: ["Python", "Machine Learning", "AI/ML", "LLMs", "APIs"],
-  },
+{
+  company: "Infosys Springboard",
+  role: "AI Intern",
+  period: "Oct 2025 — Dec 2025",
+  location: "Remote",
+  bullets: [
+    "Developed an AI-powered Real-Time Strategic Intelligence System integrating market data, sentiment analysis, and forecasting.",
+    "Implemented FinBERT-based sentiment analysis and Prophet time-series forecasting to extract actionable insights.",
+    "Built an interactive analytics dashboard with automated alerts to support decision-making.",
+    "Collaborated with a cross-functional team, contributing to architecture, development, and deployment workflows."
+  ],
+  tech: ["Python", "Machine Learning", "NLP", "Prophet", "FinBERT", "APIs", "Data Visualization"]
+}
+,
   {
     company: "MaddyCustom.com",
     role: "Frontend Developer",
