@@ -18,7 +18,7 @@ export const profile = {
   avatar: "https://avatars.githubusercontent.com/u/0?v=4",
   photo: MyPhoto,
   logo: MyLogo,
-  resume: "/janmejaysingh-resume.pdf",
+  resume: "/janmejay-resume-cv.pdf",
   leetcode: 'https://leetcode.com/u/janmejay484/',
   gfg: 'https://www.geeksforgeeks.org/user/janmejay484/',
   hackerrank: 'https://www.hackerrank.com/profile/janmejaysi484',
