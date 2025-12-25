@@ -6,6 +6,7 @@ import PosterPortfolio from '../assets/portfolio.png'
 import PosterVAudio from '../assets/PosterVAudio.png'
 import MyPhoto from '../assets/janmejay.jpeg'
 import MyLogo from '../assets/logo.jpg'
+import PosterRTIS from '../assets/RTIS.png'
 export const profile = {
   name: "Janmejay Singh",
   title: "Full-Stack Developer • MERN | AI/ML Explorer",
@@ -51,19 +52,27 @@ export const projects = [
   {
     title: "⚡ SkillSync",
     repo: "Skill_Analyzer",
-    desc: "MERN + AI career guidance platform",
-    badges: ["React","Node.js","MongoDB","AI"],
+    desc: "MERN-powered career guidance platform enhanced with AI to analyze skills, portfolio, and resume, providing personalized insights, growth paths, and smart recommendations.",
+    badges: ["React","Node.js","MongoDB","AI","Express.js","JWT" ,"API fetching"],
     image: PosterSkillAnalyzer,
     live:"https://skill-analyzer-frontend.onrender.com/",
   },
   {
     title: "📝 Journal App",
     repo: "journal-app",
-    desc: "Full-stack journaling web app with secure login",
-    badges: ["React","Node.js","MongoDB"],
+    desc: "Secure full-stack journaling platform with secured JWT/authentication, allowing users to create, manage, and reflect on personal entries with a smooth and intuitive experience.",
+    badges: ["Ejs","Express.js","Node.js","MongoDB","CRUD","JWT","Render","Postman","GIT/GITHUB"],
     image: PosterJournal,
     live:"https://journal-app-pldc.onrender.com/",
   },
+  {
+  title: "📈 RTIS — Real-Time Strategic & Intelligence System",
+  repo: "real-time-market-intelligence",
+  desc: "An AI-powered market intelligence platform built with Streamlit. It combines real-time market data, FinBERT sentiment analysis, Prophet-based price forecasting, live news analytics, and automated Slack risk alerts into a unified interactive dashboard.",
+  badges: ["Python", "Machine Learning", "NLP", "Prophet", "FinBERT", "YFinance", "Data Visualization"],
+  image: PosterRTIS, 
+  live: "https://janmejay484-real-time-market-intelligence-app-ycp2v9.streamlit.app/", 
+},
   {
     title: "🔊 ReadIT",
     repo: "ReadIT",
